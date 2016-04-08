@@ -34,7 +34,10 @@
   },
   "dependencies": {
     "electron-prebuilt": "^0.36.9",
+    "immutable": "^3.7.6",
     "react": "^0.14.7",
-    "react-router": "^2.0.0"
+    "react-redux": "^4.4.1",
+    "react-router": "^2.0.0",
+    "redux": "^3.3.1"
   }
 }

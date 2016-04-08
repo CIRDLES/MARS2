@@ -10,22 +10,31 @@ export default React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <h1>{this.props.params.institution}</h1>
-        <p>Select a task.</p>
-        {/* TODO: make the select load dynamically */}
-        <select
-          value={this.state.task}
-          onChange={this.handleTaskChange}
-        >
-          <option value="NOAA CSV">NOAA CSV</option>
-          <option value="Test">Test</option>
-        </select>
-        <div>
-          <h2>{this.state.task}</h2>
-          <p className="temporary">A brief description of the task is given here.</p>
+      <div className='text-center login'>
+        <h1 className="sub-title">{this.props.params.institution}</h1>
+        <div className="box container">
+          <div className="col-sm-6">
+          <p>Select a task.</p>
+          <form>
+            {/* TODO: make the select load dynamically */}
+            <div className="form-group">
+              <select
+                value={this.state.task}
+                onChange={this.handleTaskChange}
+              >
+                <option value="NOAA CSV">NOAA CSV</option>
+                <option value="Test">Test</option>
+              </select>
+            </div>
+            <Link className="btn btn-warning" to="/institution">Back</Link>
+            <Link className="btn btn-warning" to="/upload">Select</Link>
+          </form>
+          </div>
+          <div className="col-sm-6">
+            <h2>{this.state.task}</h2>
+            <p className="temporary">A brief description of the task is given here.</p>
+          </div>
         </div>
-        <Link to="/">Test</Link>
       </div>
     );
   }

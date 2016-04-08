@@ -1,0 +1,46 @@
+.title {
+  margin-top: 250px;
+  font-size: 5em;
+}
+
+.sub-title {
+  font-size: 4em;
+}
+
+.big-button {
+  font-style: oblique;
+  font-weight:bold;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.box {
+  background-color: #444;
+  box-shadow: 5px 5px 10px #222;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 50%;
+  display: block;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+.login-box {
+  width: 300px;
+}
+
+.box-center {
+  margin: auto;
+}
+
+.login {
+  padding-top: 150px;
+}
+
+.btn {
+  margin: 5px;
+}
